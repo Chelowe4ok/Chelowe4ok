@@ -1,0 +1,12 @@
+.viewIcons {
+    -webkit-border-radius: 90px;
+    -moz-border-radius: 90px;
+    border-radius: 90px;
+    height: 185px;
+}
+
+.greyText {
+    color: #97acba;
+    font:14pt icon;
+    font-style: italic;
+}

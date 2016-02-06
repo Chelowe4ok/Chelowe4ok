@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='modelPeoples'>
+<head>
+    <meta charset="UTF-8">
+    <title>AngularJS</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script>
+    <link href="/resources/bootstrap/css/bootstrap.css" rel="stylesheet"/>
+    <link href="/resources/bootstrap/css/bootstrap-theme.css" rel="stylesheet"/>
+
+    <script src="/scripts/peopleList.js"></script>
+
+</head>
+<body ng-controller="ModelPeoplesCtrl">
+<input type="text" ng-model="name" />
+<section  >
+    <ul ng-repeat = "people in peoples | filter:name">
+        <li><strong>{{people.name}}</strong>
+            <p>
+                age:{{people.age}}
+                heigh:{{people.heigh}}
+                institute:{{people.institute}}
+            </p>
+        </li>
+    </ul>
+    <h3>Today: {{today | date:'hh/mm/ss'}}</h3>
+
+</section>
+</body>
+</html>
