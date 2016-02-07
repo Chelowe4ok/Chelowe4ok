@@ -26,6 +26,8 @@
 
 	<!-- Work CSS -->
     <link href="css/work/whatIsCss.css" rel="stylesheet">
+    <link href="css/work/formRegistrationCss.css" rel="stylesheet">
+    <link href="css/work/reg.css" rel="stylesheet">
 
 	 <!-- Owl-Carousel -->
     <link href="css/custom.css" rel="stylesheet">
@@ -60,12 +62,153 @@
 			<h1 class="h1_home wow fadeIn" data-wow-delay="0.4s">Chelowe4ok</h1>
 			<h3 class="h3_home wow fadeIn" data-wow-delay="0.6s">Нові друзі твого активного життя</h3>
 			<ul class="list-inline intro-social-buttons">
-				<li><a href="https://twitter.com/galantiandrea" class="btn  btn-lg mybutton_cyano wow fadeIn" data-wow-delay="0.8s"><span csvglass="network-name">Twitter</span></a>
+				<li><a href="#"  class="btn  btn-lg mybutton_cyano wow fadeIn" data-wow-delay="0.8s"  data-toggle="modal" data-target="#loginModal"><span csvglass="network-name">Увійти</span></a>
 				</li>
-				<li id="download" ><a href="#downloadlink" class="btn  btn-lg mybutton_standard wow swing wow fadeIn" data-wow-delay="1.2s"><span class="network-name">Free Download</span></a>
+				<li id="download" ><a href="#" class="btn  btn-lg mybutton_standard wow swing wow fadeIn" data-wow-delay="1.2s" data-toggle="modal" data-target="#registrationModal"><span class="network-name">Регістрація</span></a>
 				</li>
 			</ul>
-		</div>    
+
+
+
+			<!--Testing -->
+
+
+			<div class="modal fade" id="registrationModal" tabindex="-1" role="dialog">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<!-- Заголовок модального окна -->
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">×</button>
+							<h4 class="modal-title   registrationLabel" id="registrationModalLabel">Регістрація</h4>
+						</div>
+						<!-- Основная часть модального окна, содержащая форму для регистрации -->
+						<div class="modal-body">
+							<!-- Форма для регистрации -->
+							<form role="form" class="form-horizontal">
+								<!-- Блок для ввода логина -->
+								<div class="form-group has-feedback">
+									<label for="login" class="control-label col-xs-3 registrationLabel">Логін:</label>
+									<div class="col-xs-6">
+										<div class="input-group">
+											<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+											<input type="text" class="form-control" required="required" name="login" pattern="[A-Za-z]{6,}">
+										</div>
+										<span class="glyphicon form-control-feedback"></span>
+									</div>
+								</div>
+								<!-- Блок для ввода email -->
+								<div class="form-group has-feedback">
+									<label for="email" class="control-label col-xs-3 registrationLabel">Email:</label>
+									<div class="col-xs-6">
+										<div class="input-group">
+											<span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+											<input type="email" class="form-control" required="required" name="email">
+										</div>
+										<span class="glyphicon form-control-feedback"></span>
+									</div>
+								</div>
+
+								<div class="form-group has-feedback">
+									<label for="password" class="control-label col-xs-3 registrationLabel">Пароль:</label>
+									<div class="col-xs-6">
+										<div class="input-group">
+											<span class="input-group-addon"><i class="glyphicon glyphicon glyphicon-pencil"></i></span>
+											<input type="password" class="form-control" required="required" name="password">
+										</div>
+										<span class="glyphicon form-control-feedback"></span>
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label for="gender" class="control-label col-xs-3 registrationLabel">Стать:</label>
+									<div class="col-xs-6">
+										<div class="input-group">
+												<label class="radio-inline registrationLabel"><input type="radio" name="optradio" checked>Чоловіча</label>
+												<label class="radio-inline registrationLabel"><input type="radio" name="optradio">Жіноча</label>
+										</div>
+										<!--<span class="glyphicon form-control-feedback"></span>-->
+									</div>
+								</div>
+								<!-- Конец блока для ввода email-->
+							</form>
+						</div>
+						<!-- Нижняя часть модального окна -->
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Отмена</button>
+							<button id="registrationSave" type="button" class="btn btn-primary">Регістрація</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="alert alert-success hidden" id="registration-success-alert">
+					<h2>Успех</h2>
+					<div>Ваши данные были успешно отправлены.</div>
+				</div>
+				<!-- Кнопка для открытия модального окна -->
+			</div>
+
+
+			<!-- Form Registration -->
+
+
+			<div class="modal fade" id="loginModal" tabindex="-1" role="dialog">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<!-- Заголовок модального окна -->
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">×</button>
+							<h4 class="modal-title   registrationLabel" id="loginModalLabel">Регістрація</h4>
+						</div>
+						<!-- Основная часть модального окна, содержащая форму для регистрации -->
+						<div class="modal-body">
+							<!-- Форма для регистрации -->
+							<form role="form" class="form-horizontal">
+								<!-- Блок для ввода логина -->
+								<div class="form-group has-feedback">
+									<label for="login" class="control-label col-xs-3 registrationLabel">Логін:</label>
+									<div class="col-xs-6">
+										<div class="input-group">
+											<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+											<input type="text" class="form-control" required="required" name="login" pattern="[A-Za-z]{6,}">
+										</div>
+										<span class="glyphicon form-control-feedback"></span>
+									</div>
+								</div>
+
+								<div class="form-group has-feedback">
+									<label for="password" class="control-label col-xs-3 registrationLabel">Пароль:</label>
+									<div class="col-xs-6">
+										<div class="input-group">
+											<span class="input-group-addon"><i class="glyphicon glyphicon glyphicon-pencil"></i></span>
+											<input type="password" class="form-control" required="required" name="password">
+										</div>
+										<span class="glyphicon form-control-feedback"></span>
+									</div>
+								</div>
+							</form>
+						</div>
+						<!-- Нижняя часть модального окна -->
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Отмена</button>
+							<button id="loginSave" type="button" class="btn btn-primary">Регістрація</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="alert alert-success hidden" id="login-success-alert">
+					<h2>Успех</h2>
+					<div>Ваши данные были успешно отправлены.</div>
+				</div>
+			</div>
+
+
+
+		</div>
+
         <!-- /.container -->
 		<div class="col-xs-12 text-center abcen wow fadeIn">
 			<div class="button_down "> 
@@ -73,7 +216,15 @@
 			</div>
 		</div>
     </div>
-	
+
+
+
+
+
+
+
+
+
 	<!-- NavBar-->
 	<nav class="navbar-default" role="navigation">
 		<div class="container">
@@ -526,6 +677,8 @@
 	<script src="js/script.js"></script>
 	<!-- StikyMenu -->
 	<script src="js/stickUp.min.js"></script>
+	<script src="js/formRegistration.js"></script>
+	<script src="js/work/registration.js"></script>
 	<script type="text/javascript">
 	  jQuery(function($) {
 		$(document).ready( function() {
