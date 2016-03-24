@@ -1,0 +1,17 @@
+.root{
+    -fx-background-image: url("2.jpg");
+
+}
+.newGame{
+
+    -fx-background-color: chartreuse;
+    -fx-text-fill: cornsilk;
+    -fx-alignment: baseline-center;
+
+
+}
+.newGame:hover{
+    -fx-background-color: aqua;
+    -fx-text-fill: chocolate;
+    -fx-min-height: 50px;
+}
