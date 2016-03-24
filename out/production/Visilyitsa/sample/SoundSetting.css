@@ -1,0 +1,29 @@
+.root{
+    -fx-background-image: url("3.jpeg");
+
+}
+.backButton{
+
+    -fx-background-color: chartreuse;
+    -fx-text-fill: cornsilk;
+    -fx-alignment: baseline-center;
+
+
+}
+.backButton:hover{
+    -fx-background-color: aqua;
+    -fx-text-fill: cornsilk;
+
+}
+.soundOn {
+    -fx-background-color: green;
+}
+.soundOff {
+    -fx-background-color: red;
+}
+.soundOn1 {
+    -fx-background-color: gray;
+}
+.soundOff1 {
+    -fx-background-color: gray;
+}
