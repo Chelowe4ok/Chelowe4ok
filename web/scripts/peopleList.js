@@ -14,14 +14,14 @@ modelPeoples.controller("ModelPeoplesCtrl", function($scope){
             {
                 "name": "Dima",
                 "age": "19",
-                "heigh": 1.70,
+                "heigh": 1.72,
                 "institute": "MAU"
 
             },
             {
                 "name": "Rex",
                 "age": "23",
-                "heigh": 0.50,
+                "heigh": 1.53,
                 "institute": "DOM"
             }];
 

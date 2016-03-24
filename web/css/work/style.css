@@ -1,0 +1,270 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+body {
+	background: #fff7ff no-repeat;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	
+}
+
+article, aside, datalist, figcaption, figure, footer, header, hgroup,menu, nav, section {
+	display: block;
+}
+
+header {
+	position: relative;
+	background: #1a0000;
+	width: 100%;
+	height: 40px;
+}
+
+.header {
+	position: relative;
+	background: #1a0000;
+	max-width: 1400px;
+	height: 40px;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+.logo {
+	float: left;
+	height: 100%;
+}
+
+.logo a {
+	max-height: 100%;
+	
+}
+
+.logo img {
+	max-height: 100%;
+	width: auto;
+}
+
+.nav {
+	float: right;
+	height: 100%;
+	
+}
+
+.nav li {
+	float: left;
+	margin-left: 5px;
+	list-style-type: none;
+}
+
+.nav a {
+	display: block;
+	padding: 0 5px; 
+	color: white;
+	background: #5e4a5e;
+	height: 100%;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.nav a:hover {
+	display: block;
+	padding: 0 5px; 
+	color: white;
+	background: #99709a;
+	height: 100%;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+@media only screen and (min-width: 769px){
+
+.wrapper {
+	max-width: 1400px;
+	height: auto;
+	background: #fff7ff;
+	margin: 0 auto;
+}
+
+.largePhoto {
+	background: #4dc43c;
+	background-image: url(../../img/6.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 150px;
+	width: 100%;
+}
+    
+
+.partition {
+	padding: 0;
+	margin: 0;
+	height: 10px;
+	background: black;
+}
+	.content {
+            background: #e9f3f3 url('../../img/backgroundOfWall.jpg') repeat;
+    }
+    
+aside {
+	width: 30%;
+	height: auto;
+	float: left;
+}
+
+.photoOfProfil {
+	position: relative;
+	top: -80px;
+	width: 70%;
+	margin: 0 auto;
+}
+
+.photoOfProfil img {
+	max-width: 100%;
+	height: auto;
+	border: 9px solid white;
+}
+
+.data {
+	position: relative;
+	top: -80px;
+	text-align: center;
+}
+
+article {
+	width: 70%;
+	height: auto;
+	float: left;
+}
+
+.news {
+	position: relative;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.new {
+    position: relative;
+	text-decoration: inherit;
+	background: #9edfd1 no-repeat;
+	background-size: 100% 100%;
+	color: white;
+	margin-top: 25px;
+
+	border: 5px solid #9edfd1;
+	border-radius: 20px;
+
+	padding-left: 25px;
+	padding-top: 25px;
+	padding-right: 30px;
+	padding-bottom: 25px;
+	font-size: 1.3em;
+    
+     -webkit-transition: opsity 1s ease-out 0.5s;
+    transition: opsity 1s ease-out 0.5s;
+	
+}
+    
+    .new > .close{
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        color: black;
+        cursor: pointer;
+    }
+
+
+}
+
+/* ноутбуки і т.д. */
+@media only screen and (max-width: 992px){
+	
+}
+
+/* планшети */
+@media only screen and (max-width: 768px){
+	.largePhoto {
+		display: none;
+	}
+	
+	.partition {
+		display: none;
+	}
+	
+	.wrapper {
+        max-width: 1400px;
+        height: 100%;
+        background: #fff7ff;
+        margin: 0 auto;
+    }
+	
+	.data {
+		position: relative;
+		top: 0;
+	}
+	
+	aside {
+		float: none;
+        background: #e9f3f3 url('../../img/backgroundOfWall.jpg') repeat;
+		margin: 0 auto;
+        text-align: center;
+		padding-bottom: 20px;
+	}
+	
+	article {
+		float: none;
+        background: #e9f3f3 url('../../img/backgroundOfWall.jpg') repeat;
+		width: 100%;
+        height: auto;
+		margin: 0;
+	}
+	
+	.new {
+   
+        position: relative;
+        background: #b5fff0 no-repeat;
+        background-size: 100% 100%;
+        color: white;
+        margin-top: 5px; 
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-right: 30px;
+        padding-bottom: 10px;
+        font-size: 1.3em;
+	}
+    
+    .new > .close{
+        position: absolute;
+        top: 10px;
+        right: 5px;
+        color: black;
+    }
+	
+	.photoOfProfil{
+		position: relative;
+		top: 10px;
+        width: 50%;
+        margin: 0 auto;
+
+	}
+    .photoOfProfil a {
+		max-width: 100%;
+		height: auto;
+	}
+
+	.photoOfProfil img {
+		max-width: 100%;
+		height: auto;
+		border: 6px solid white;
+	}
+	
+}
+
+/* смартфони */
+@media only screen and (max-width: 480px){
+    
+}
